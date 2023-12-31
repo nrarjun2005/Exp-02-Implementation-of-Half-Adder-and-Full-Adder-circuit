@@ -36,6 +36,24 @@ Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
 Program:
+half adder:
+module ha(x,y,s,c);
+input x,y;
+output s,c;
+xor(s,x,y);
+and(c,x,y);
+endmodule
+
+full adder:
+module full_adder(x, y, z, s, c, x1, x2, x3);
+input x,  y,z;
+output s ,c, x1, x2, x3;
+xor(x1, x, y);
+xor(s, x1, z);
+and(x2, x, y);
+and(x3, x1, z);
+or(c, x2, x3);
+endmodule
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 Developed by: 
@@ -46,9 +64,25 @@ RTL realization
 
 ### Output:
 ### RTL
-### TIMING DIAGRAM
+half adder:
+![image](https://github.com/nrarjun2005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155224066/13e5cdbb-99d4-48ce-bf43-2df5df7de742)
 
+full adder:
+![image](https://github.com/nrarjun2005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155224066/9fb32b2a-efe3-4b6e-a0e8-b1b4849d6581)
+
+### TIMING DIAGRAM
+half adder:
+![image](https://github.com/nrarjun2005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155224066/21fbdcac-7844-4475-818f-40506a8bbea2)
+
+full adder:
+![image](https://github.com/nrarjun2005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155224066/1c2a471e-bfc6-4c31-acde-d29f06e62cbb)
 
 ### TRUTH TABLE 
+half adder:
+![image](https://github.com/nrarjun2005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155224066/acc4a0da-96eb-4dc8-a7e9-cf729cfac1b1)
+
+full adder:
+![image](https://github.com/nrarjun2005/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/155224066/a37a809f-e713-4864-bb3c-e0246475eae6)
 
 ### Result:
+Therefore,half adder and full adder is verified
