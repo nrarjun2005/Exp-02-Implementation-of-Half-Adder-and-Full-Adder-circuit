@@ -56,8 +56,8 @@ or(c, x2, x3);
 endmodule
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: ARJUNSHA NR
+RegisterNumber:212223050007  
 */
 Logic symbol & Truthtable
 RTL realization
